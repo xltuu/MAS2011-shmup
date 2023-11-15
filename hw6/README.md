@@ -14,9 +14,9 @@ MAS2011-shmup
 
 * plyer, bullet, meteor
 
-    <img src="img/ufoRed.png" width="50px" height="px"></img>
+    <img src="img/witch.png" width="50px" height="px"></img>
     <img src="img/laserBlue08.png" width="50px" height="px"></img>
-    <img src="img/meteorGrey_big1.png" width="50px" height="px"></img>
+    <img src="img/potion_red_big.png" width="50px" height="px"></img>
 * code 
     ```python
         bullet_img = []
