@@ -2,9 +2,13 @@ MAS2011-shmup
 =============
 ### Play Space Shooter👾
 
+* Playing Video
+  
+  <https://youtu.be/9ylLP8C-6PA>
+
 * How To Play❓
 
-    When you start the program, you will be the witch, and obstacle(potion) rotate. If push space bar, you can shoot bullet. If push the left, right key, you can avoid the obstacle. On the upper left screen, there is an HP bar that shrinks when it crushes a obstacle. When you crush with meteor and die, don't worry. You have 3 chance additionally. 
+    When you start the program, you will be the witch, and obstacle(potion) rotate. If push *space bar*, you can shoot bullet. If push the *left, right key*, you can avoid the obstacle. On the upper left screen, there is an HP bar that shrinks when it crushes a obstacle. When you crush with meteor and die, don't worry. You have *3 chance* additionally. 
 
     Good Luck!🌟
 
@@ -12,7 +16,7 @@ MAS2011-shmup
   
   <img src="playing.png" width="300px" height="px"></img>
 
-* player, bullet, obstacle
+* plyer, bullet, obstacle
 
     <img src="img/witch.png" width="50px" height="px"></img>
     <img src="img/laserBlue08.png" width="50px" height="px"></img>
