@@ -55,7 +55,7 @@ def draw_shield_bar(surf, x, y, pct):
     fill = (pct / 100) * BAR_LENGTH
     outline_rect = pygame.Rect(x, y, BAR_LENGTH, BAR_HEIGHT)
     fill_rect = pygame.Rect(x, y, fill, BAR_HEIGHT)
-    pygame.draw.rect(surf, RED, fill_rect)
+    pygame.draw.rect(surf, (236, 134, 252), fill_rect)
     pygame.draw.rect(surf, WHITE, outline_rect, 2)
 
 
@@ -70,7 +70,7 @@ def draw_lives(surf, x, y, lives, img):
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.transform.scale(player_img, (50, 38))
+        self.image = pygame.transform.scale(player_img, (60, 48))
         self.image.set_colorkey(BLACK)
         self.rect = self.image.get_rect()
         self.radius = 20
@@ -204,10 +204,10 @@ class Explosion(pygame.sprite.Sprite):
 
 
 # Load all game graphics
-background = pygame.image.load(path.join(img_dir, "starfield.png")).convert()
+background = pygame.image.load(path.join(img_dir, "back.png")).convert()
 background_rect = background.get_rect()
 player_img = pygame.image.load(
-    path.join(img_dir, "ufoRed.png")).convert()
+    path.join(img_dir, "witch.png")).convert()
 player_mini_img = pygame.transform.scale(player_img, (25, 19))
 player_mini_img.set_colorkey(BLACK)
 bullet_img = []
@@ -215,9 +215,11 @@ bullet_list = ["laserBlue09.png", "laserBlue10.png", "laserBlue08.png"]
 for bimg in bullet_list:
     bullet_img.append(pygame.image.load(path.join(img_dir, bimg)).convert())
 meteor_images = []
-meteor_list = ['meteorGrey_big1.png', 'meteorGrey_med1.png', 'meteorGrey_med1.png',
-               'meteorGrey_med2.png', 'meteorGrey_small1.png', 'meteorGrey_small2.png',
-               'meteorGrey_tiny1.png']
+# meteor_list = ['meteorGrey_big1.png', 'meteorGrey_med1.png', 'meteorGrey_med1.png',
+#                'meteorGrey_med2.png', 'meteorGrey_small1.png', 'meteorGrey_small2.png',
+#                'meteorGrey_tiny1.png']
+meteor_list = ['potion_red_big.png',
+               'potion_green_big.png', 'potion_red_mid.png', 'potion_green_mid.png', 'potion_red_small.png', 'potion_green_small.png']
 for img in meteor_list:
     meteor_images.append(pygame.image.load(path.join(img_dir, img)).convert())
 explosion_anim = {}
@@ -238,13 +240,13 @@ for i in range(9):
     explosion_anim['player'].append(img)
 
 # Load all game sounds
-shoot_sound = pygame.mixer.Sound(path.join(snd_dir, 'pew.wav'))
+shoot_sound = pygame.mixer.Sound(path.join(snd_dir, 'BBeep.wav'))
 expl_sounds = []
-for snd in ['expl3.wav', 'expl6.wav']:
+for snd in ['expl1.wav', 'expl2.wav']:
     expl_sounds.append(pygame.mixer.Sound(path.join(snd_dir, snd)))
-player_die_sound = pygame.mixer.Sound(path.join(snd_dir, 'pew.wav'))
+player_die_sound = pygame.mixer.Sound(path.join(snd_dir, 'die.wav'))
 pygame.mixer.music.load(
-    path.join(snd_dir, 'expl6.wav'))
+    path.join(snd_dir, 'bgm.ogg'))
 pygame.mixer.music.set_volume(0.4)
 
 all_sprites = pygame.sprite.Group()
