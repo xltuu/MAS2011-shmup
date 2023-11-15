@@ -27,7 +27,7 @@ YELLOW = (255, 255, 0)
 pygame.init()
 pygame.mixer.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Shmup!")
+pygame.display.set_caption("20221523_권지수")
 clock = pygame.time.Clock()
 
 font_name = pygame.font.match_font('arial')
