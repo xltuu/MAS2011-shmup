@@ -21,6 +21,12 @@ MAS2011-shmup
     <img src="img/witch.png" width="50px" height="px"></img>
     <img src="img/laserBlue08.png" width="50px" height="px"></img>
     <img src="img/potion_red_big.png" width="50px" height="px"></img>
+
+
+* Preparation for writing code🫠
+  
+  Look around '*www.opengameart.org*', and pick great image and bgm. Make effect sound with Bfxr. When make obstacle image and background image, I used photo editor to adjust image's size. I needed to careful to define image and sound file.
+  
 * code 
     ```python
         bullet_img = []
@@ -42,7 +48,3 @@ MAS2011-shmup
     ```
 
     define 3 bullet images, and randomly appear.
-
-* Preparation for writing code🫠
-  
-  Look around '*www.opengameart.org*', and pick great image and bgm. Make effect sound with Bfxr. When make obstacle image and background image, I used photo editor to adjust image's size. I needed to careful to define image and sound file.
